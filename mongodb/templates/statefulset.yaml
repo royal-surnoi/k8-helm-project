@@ -17,7 +17,6 @@ spec:
   replicas: {{ .Values.deployment.replicas }} # by default is 1
   template:
     metadata:
-      labels:
         labels:
           app: mongodb
           project: roboshop
