@@ -10,10 +10,9 @@ metadata:
 spec:
   selector:
     matchLabels:
-      labels:
-        app: mongodb
-        project: roboshop
-        tier: db # has to match .spec.template.metadata.labels
+      app: mongodb
+      project: roboshop
+      tier: db # has to match .spec.template.metadata.labels
   serviceName: "mongodb"
   replicas: {{ .Values.deployment.replicas }} # by default is 1
   template:
